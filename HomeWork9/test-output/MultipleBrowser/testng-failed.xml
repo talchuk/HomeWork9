@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite configfailurepolicy="continue" guice-stage="DEVELOPMENT" verbose="5" name="Failed suite [MultipleBrowser]" data-provider-thread-count="1">
+  <test thread-count="5" verbose="5" name="SingleTest1(failed)">
+    <parameter name="browser" value="firefox"/>
+    <classes>
+      <class name="At_025.HomeWork9.FirstTest">
+        <methods>
+          <include name="ResultIsNotEmpty"/>
+          <include name="setup"/>
+          <include name="ResultIsEmpty"/>
+          <include name="beforeTest"/>
+          <include name="tearDownTest"/>
+        </methods>
+      </class> <!-- At_025.HomeWork9.FirstTest -->
+    </classes>
+  </test> <!-- SingleTest1(failed) -->
+  <test thread-count="5" verbose="5" name="SingleTest2(failed)">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="At_025.HomeWork9.FirstTest">
+        <methods>
+          <include name="ResultIsNotEmpty"/>
+          <include name="setup"/>
+          <include name="ResultIsEmpty"/>
+          <include name="beforeTest"/>
+          <include name="tearDownTest"/>
+        </methods>
+      </class> <!-- At_025.HomeWork9.FirstTest -->
+    </classes>
+  </test> <!-- SingleTest2(failed) -->
+</suite> <!-- Failed suite [MultipleBrowser] -->
